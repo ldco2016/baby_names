@@ -15,6 +15,14 @@ function loadNames(e) {
   if (origin !== '') {
     url += `region=${origin}&`;
   }
+  // Read the gender and append to url
+  if (gender !== '') {
+    url += `gender=${gender}&`;
+  }
+  // Read the amont and append to url
+  if (amount !== '') {
+    url += `amount=${amount}&`;
+  }
 
   console.log(url);
 }
